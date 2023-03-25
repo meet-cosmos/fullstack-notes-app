@@ -1,0 +1,19 @@
+let arr2 = []
+    if (data.length !== 0 && mail.length !== 0) {
+        for (let i = 0; i < data.length; i++) {
+            let letter = data[i].email
+            let flag = "true"
+            for (let j = 0; j < mail.length; j++) {
+                if (mail[j] !== letter[j]) {
+                    flag = "false"
+                    break
+                }
+            }
+            if (flag === "true") {
+                arr2.push(data[i])
+            }
+        }
+
+    } else {
+        arr2 = data
+    }
